@@ -3,7 +3,7 @@
     "manifest_version": 3,
     "version": "1.0",
     "author": "everton-tenorio",
-    "description": "Extensão para visualiar a grade de programação dos jogos de Futebol!",
+    "description": "Extensão para visualizar a grade de programação dos jogos de Futebol!",
     "permissions": ["tabs"],
     "action": {
       "default_popup": "popup.html",
