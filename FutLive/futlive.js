@@ -23,7 +23,7 @@ function construirTabela(data) {
     })
 }
         
-fetch('http://127.0.0.1:3000')
+fetch('url futlive-sv')
     .then(function(response) {
         return response.json()
     })
