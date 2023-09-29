@@ -1,8 +1,7 @@
 {
   "functions": {
-    "FutLive": {
-      "handler": "futlive.js",
-      "memory": 512
+    "futlive.js": {
+      "runtime": "node@14"
     }
   }
 }
