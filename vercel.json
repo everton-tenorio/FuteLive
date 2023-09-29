@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "meu-script": {
+      "handler": "futlive.js",
+      "memory": 512
+    }
+  }
+}
