@@ -23,7 +23,7 @@ function construirTabela(data) {
     })
 }
         
-fetch('url futlive-sv')
+fetch('http://jogos.evertontenorio.tech:3000')
     .then(function(response) {
         return response.json()
     })
