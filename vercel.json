@@ -1,6 +1,6 @@
 {
   "functions": {
-    "meu-script": {
+    "FutLive": {
       "handler": "futlive.js",
       "memory": 512
     }
