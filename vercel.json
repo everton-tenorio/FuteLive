@@ -1,7 +1,6 @@
 {
   "functions": {
     "futlive.js": {
-      "runtime": "node@14"
     }
   }
 }
