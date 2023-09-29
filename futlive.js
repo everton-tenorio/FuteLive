@@ -23,7 +23,7 @@ function construirTabela(data) {
     })
 }
         
-fetch('http://jogos.evertontenorio.tech:3000')
+fetch('https://futlive-7txg8ka1e-everton-tenorios-projects.vercel.app/')
     .then(function(response) {
         return response.json()
     })
