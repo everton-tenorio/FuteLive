@@ -7,15 +7,35 @@ function construirTabela(data) {
                 
         // Criar um elemento div para a tabela
         var tableDiv = document.createElement('div')
-                
-        // Definir o título da tabela
-        var titleElement = document.createElement('h2')
-        titleElement.textContent = tableTitle
-        tableDiv.appendChild(titleElement)
-                
+
         // Criar um elemento div para a tabela de conteúdo
         var contentDiv = document.createElement('div')
         contentDiv.innerHTML = tableContent
+                
+        // Definir o título da tabela
+        var titleElement = document.createElement('h2')
+
+        var whatsappLink = document.createElement('a')
+        whatsappLink.target = "_blank"
+        whatsappLink.id = 'zap-link'
+        contentDiv.querySelector('table').classList.add('table')
+        contentDiv.querySelector('thead').classList.add('table-dark')
+        var jogos_msg = contentDiv.querySelector('tbody').innerHTML
+        var content_msg = `${tableTitle}%0A%20${jogos_msg.replace(/<tr>/g, '%0A%0A📺⚽').replace(/<\/tr>/g, '%0A').replace(/<\/td>/g, '\n').replace(/<[^>]*>/g, '%0A%20')}`
+
+        if (window.innerWidth <= 768) {
+            whatsappLink.href = `whatsapp://send?text=${content_msg}`;
+        } else {
+            whatsappLink.href = `https://web.whatsapp.com/send?text=${content_msg}`;
+        }
+
+        whatsappLink.innerHTML = '<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/WhatsApp_icon.png/479px-WhatsApp_icon.png" width="35px">'
+        whatsappLink.style = 'padding-left: 12px; font-size: 50px'
+        titleElement.textContent = tableTitle
+        titleElement.appendChild(whatsappLink)
+        tableDiv.appendChild(titleElement)
+                
+        // A div da tabela de conteúdo é adicionada na tabela geral
         tableDiv.appendChild(contentDiv)
                 
         // Adicionar a tabela ao contêiner
