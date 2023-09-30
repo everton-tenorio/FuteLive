@@ -61,7 +61,7 @@ appname {
     }
 
     #tabelas-container h2{
-        font-size: 15px;
+        font-size: 12.5px;
         font-weight: bolder;
         padding-left: 10px;
         text-transform: uppercase;
@@ -76,11 +76,11 @@ appname {
     }
 
     table {
-        margin: 12px;
+        margin: 3px;
     }
 
     thead {
-        font-size: 12.5px;
+        font-size: 12.8px;
         font-weight: bolder; 
     }
 
