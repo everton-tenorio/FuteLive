@@ -23,7 +23,7 @@ function construirTabela(data) {
     })
 }
         
-fetch('https://futlive-7txg8ka1e-everton-tenorios-projects.vercel.app/')
+fetch('URL API')
     .then(function(response) {
         return response.json()
     })
