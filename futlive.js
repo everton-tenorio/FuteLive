@@ -21,7 +21,7 @@ function construirTabela(data) {
         contentDiv.querySelector('table').classList.add('table')
         contentDiv.querySelector('thead').classList.add('table-dark')
         var jogos_msg = contentDiv.querySelector('tbody').innerHTML
-        var content_msg = `${tableTitle}%0A%20${jogos_msg.replace(/<tr>/g, '%0A%0A📺⚽').replace(/<\/tr>/g, '%0A').replace(/<\/td>/g, '\n').replace(/<[^>]*>/g, '%0A%20')}`
+        var content_msg = `${tableTitle}%0A%20${jogos_msg.replace(/<tr>/g, '%0A%0A📺⚽').replace(/<\/tr>/g, '%0A').replace(/<\/td>/g, '\n').replace(/<[^>]*>/g, '%0A%20').replace(/\+/g, '%2B')}`
 
         if (window.innerWidth <= 768) {
             whatsappLink.href = `whatsapp://send?text=${content_msg}`;
