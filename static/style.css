@@ -22,19 +22,6 @@
     margin-right: 10px;
 }
 
-#dev_evt {
-    position: fixed;
-    right: 10px;
-    color: red;
-}
-
-#propag {
-    position: fixed;
-    right: 10px;
-    display: block;
-    margin-top: -15px;
-}
-
 appname {
     font-size: 18px;
     margin-left: -22px;
