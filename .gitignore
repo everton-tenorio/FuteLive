@@ -1,0 +1,48 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Environment variables
+.env
+
+# Build artifacts
+/build/
+/dist/
+
+# Dependency directories
+/.pnp/
+.pnp.js
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# React
+/.eslintcache
+/node_modules
+npm-debug.log
+yarn-error.log
+yarn.lock
+.pnp.js
+coverage/
+
+# Vue.js
+/dist/
+/node_modules/
+npm-debug.log
+yarn-error.log
+*.bak
+*.log
