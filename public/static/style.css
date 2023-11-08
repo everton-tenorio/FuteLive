@@ -95,35 +95,39 @@ a#zap-link {
   body{
     background-color: #212325;
   }
+
+  #futlive-logo {
+    width: 4%;
+  }
   
   .container {
     padding-top: 0px;
   }
 
-    .container h2{
-        font-size: 12.5px;
-        font-weight: bolder;
-        padding-top: 12px;
-        padding-left: 10px;
-        padding-bottom: 20px;
-        margin-bottom: -25px;
-        text-transform: uppercase;
-        text-align: left;
-        color: white;
-        background-color: #212325;
-    }
+  .container h2 {
+    font-size: 12.5px;
+    font-weight: bolder;
+    padding-top: 12px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    margin-bottom: -25px;
+    text-transform: uppercase;
+    text-align: left;
+    color: white;
+    background-color: #212325;
+  }
 
-    a#zap-link i{
-        padding-top: 20px;
-        font-size: 40px;
-    }
+  a#zap-link i {
+    padding-top: 20px;
+    font-size: 40px;
+  }
 
+  thead {
+    font-size: 12px;
+  }
 
-    thead {
-        font-size: 12px;
-    }
+  td {
+    font-size: 11.5px;
+  }
 
-    td {
-        font-size: 11.5px;
-    }
 }

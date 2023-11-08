@@ -47,7 +47,7 @@ const TabelaJogos = () => {
   return (
     <div>
       <div className="header">
-        <a href="/"><img src="./static/futlive.png" alt="FutLive Logo" width="1%"/> Futlive</a>
+        <a href="/"><img id="futlive-logo" src="./static/futlive.png" alt="FutLive Logo" width="1%"/> Futlive</a>
       </div>
       <div className="container">
         {dados.map((tableData) => (
