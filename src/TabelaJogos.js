@@ -20,8 +20,8 @@ const TabelaJogos = () => {
   const Tabela = ({ diaJogo, content }) => {
     const [whatsappLink, setWhatsappLink] = useState('');
 
-    useEffect(() => {
-      const jogosMsg = content.match(/<tbody>[\s\S]*<\/tbody>/)[0];
+    useEffect(() => { 
+      const jogosMsg = content.match(/<table>[\s\S]*<\/table>/)[0];
       const contentMsg = `${diaJogo}%0A%20${jogosMsg.replace(/<tr>/g, '%0A%0A📺⚽').replace(/<\/tr>/g, '%0A').replace(/<\/td>/g, '\n').replace(/<[^>]*>/g, '%0A%20').replace(/\+/g, '%2B')}%0A%20https://futlive.vercel.app/`;
 
       if (window.innerWidth <= 768) {
@@ -31,7 +31,7 @@ const TabelaJogos = () => {
       }
     }, [diaJogo, content]);
 
-    const contentx = content.replace(/<colgroup[^>]*>[\s\S]*?<\/colgroup>/g, '');
+    const contentx = content.replace(/<colgroup[^>]*>[\s\S]*?<\/colgroup>/g, '').replace('null', 'Sem jogos.');;
 
     return (
       <div>
