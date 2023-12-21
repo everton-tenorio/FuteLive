@@ -31,7 +31,7 @@ const TabelaJogos = () => {
       }
     }, [diaJogo, content]);
 
-    const contentx = content.replace(/<colgroup[^>]*>[\s\S]*?<\/colgroup>/g, '').replace('</tr>', '<th><i class="fa-solid fa-satellite-dish" style="color:red"></i></th></tr>').replace('null', '<thead><th><strong>-</strong></th></thead><tbody><tr><td>Sem Jogos.</td></tr></tbody>');;
+    const contentx = content.replace(/<colgroup[^>]*>[\s\S]*?<\/colgroup>/g, '').replace('</tr>', '<th><i class="fa-solid fa-satellite-dish" style="color:#e32424"></i></th></tr>').replace('null', '<thead><th><strong>-</strong></th></thead><tbody><tr><td>Sem Jogos.</td></tr></tbody>');;
 
     return (
       <div>
