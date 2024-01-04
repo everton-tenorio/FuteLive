@@ -6,7 +6,7 @@ const TabelaJogos = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://futlive-sv.vercel.app/');
+        const response = await fetch('https://agendafut-sv.vercel.app/');
         const data = await response.json();
         setDados(data);
       } catch (error) {
