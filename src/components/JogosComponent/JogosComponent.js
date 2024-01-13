@@ -49,14 +49,14 @@ const JogosComponent = ({ diaSelecionado }) => {
             <h3 style={styles.diaJogo}><FontAwesomeIcon icon={faBullseye} size="sm" color="red" />    {item.diaJogo}</h3>
             {item.content && item.content.map((jogo, jogoIndex) => {
               
-              const regexDia = /Jogos de [a-z]+, (\d{1,2}) de [a-z]+ de \d{4}/i;
+              const regexDia = /([a-z]+), (\d{1,2})/;
               var resultado = regexDia.exec(item.diaJogo);
               var dia_data = ''
               let corHorario = ''
               if(resultado == null){
                 resultado = ''
               } else {
-                dia_data = resultado[1];
+                dia_data = resultado[2];
               }
               
               if (dia_data.toString().startsWith(diaAtual)){
