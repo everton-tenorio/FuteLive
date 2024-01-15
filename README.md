@@ -1,5 +1,5 @@
 # FutLive
 
 <p align="center">
-  <img src="./public/static/futlive-example.png" alt="FutLive example" width="auto">
+  <img src="./public/static/futlive-on.png" alt="FutLive example" width="auto">
 </p>
