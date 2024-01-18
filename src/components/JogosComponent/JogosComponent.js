@@ -12,7 +12,7 @@ const JogosComponent = ({ diaSelecionado }) => {
     const fetchData = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch('https://agendafut-sv.vercel.app/jogos');
+        const response = await fetch('https://agendafut-sv2.vercel.app/jogos');
         const data = await response.json();
         // Filtra os jogos apenas para o dia selecionado
         const jogosDoDia = data.filter(item => {
@@ -79,7 +79,7 @@ const JogosComponent = ({ diaSelecionado }) => {
                       <FontAwesomeIcon style={{ color: corHorario }} icon={faClock} size="lg" color="#777" />{` ${jogo.horario}`}
                     </div>
                     <div style={styles.infoText} className="card-text">
-                      <FontAwesomeIcon style={{ color: corHorario }} icon={faTv} size="lg" color="#777" /> {`${jogo.ondePassa}`}
+                      <FontAwesomeIcon style={{ color: corHorario }} icon={faTv} size="lg" color="#777" /> <a href={`"${jogo.url}"`}>{`${jogo.ondePassa}`}</a>
                     </div>
                   </div>
                 </div>
