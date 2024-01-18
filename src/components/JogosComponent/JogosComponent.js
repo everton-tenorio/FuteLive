@@ -78,11 +78,9 @@ const JogosComponent = ({ diaSelecionado }) => {
                     <div style={styles.infoText} className="card-text">
                       <FontAwesomeIcon style={{ color: corHorario }} icon={faClock} size="lg" color="#777" />{` ${jogo.horario}`}
                     </div>
-                    {jogo.ondePassa.split(',').map((canal, canalIndex) => (
-                      <div key={canalIndex} style={styles.infoText} className="card-text">
-                        <FontAwesomeIcon style={{ color: corHorario }} icon={faTv} size="lg" color="#777" /> <a href={`#${canal}`}>{canal.trim()}</a>
+                      <div style={styles.infoText} className="card-text">
+                        <FontAwesomeIcon style={{ color: corHorario }} icon={faTv} size="lg" color="#777" />{` ${jogo.ondePassa}`}
                       </div>
-                    ))}
                   </div>
                 </div>
               );
