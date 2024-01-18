@@ -79,7 +79,7 @@ const JogosComponent = ({ diaSelecionado }) => {
                       <FontAwesomeIcon style={{ color: corHorario }} icon={faClock} size="lg" color="#777" />{` ${jogo.horario}`}
                     </div>
                     <div style={styles.infoText} className="card-text">
-                      <FontAwesomeIcon style={{ color: corHorario }} icon={faTv} size="lg" color="#777" /> <a href={`"${jogo.url}"`}>{`${jogo.ondePassa}`}</a>
+                      <FontAwesomeIcon style={{ color: corHorario }} icon={faTv} size="lg" color="#777" /> <a href={`${jogo.url}`}>{`${jogo.ondePassa}`}  </a>
                     </div>
                   </div>
                 </div>
