@@ -21,10 +21,10 @@ const NavegacaoJogos = () => {
       .then(response => response.json())
       .then(data => {
         const datas = data.map(item => {
-           const match = item.diaJogo.match(/([a-z]+), (\d{1,2})/);
-          
-          const dataEspecifica = new Date(2024, 0, match[2]); 
-		  const diaDaSemanaEspecificado = dataEspecifica.toLocaleString('pt-BR', { weekday: 'short' });
+          const match = item.diaJogo.match(/([a-z]+), (\d{1,2})/);
+          var dataMes = new Date().getMonth()
+          const dataEspecifica = new Date(2024, dataMes, match[2]); 
+          const diaDaSemanaEspecificado = dataEspecifica.toLocaleString('pt-BR', { weekday: 'short' });
 
           return { dia: match[2], diaSemana: diaDaSemanaEspecificado };
         });
