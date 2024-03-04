@@ -6,7 +6,7 @@ const App = () => {
   return (
     <div>
       <div className="header">
-        <a href="/">sofutebol<img id="futlive-logo" src="./static/futlive.png" alt="FutLive Logo" width="1%"/>live</a>
+        <a href="/">sofutebol <img id="futlive-logo" src="./static/futlive.png" alt="FutLive Logo" width="1%" style="margin-top: 4px"/>live</a>
       </div>
       <NavegacaoJogos />
       <TabelaJogos />
